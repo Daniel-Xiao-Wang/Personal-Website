@@ -3,7 +3,7 @@ export const profile = {
   firstName: "Daniel",
   tagline: "Firmware & Software Engineering Student",
   email: "wangww1117@gmail.com",
-  linkedin: "https://linkedin.com/in/daniel-wang",
+  linkedin: "https://www.linkedin.com/in/daniel-wang-9a4bb4248",
   github: "https://github.com/Daniel-Xiao-Wang",
   resumePath: "/resume.pdf",
   bio: [
@@ -70,6 +70,18 @@ export const experience = [
       "Flashed and debugged firmware directly on hardware, monitoring SRAM usage and reducing consumption by 10–25% by removing unnecessary code.",
       "Tracked and managed development tasks in Jira within an Agile DevOps workflow.",
       "Maintained version control across all variant codebases using GitHub.",
+    ],
+  },
+  {
+    title: "Computer Programmer",
+    company: "CoderSports",
+    location: "",
+    period: "June 2023 – August 2023",
+    description: [
+      "Designed and developed coding problems and instructional materials for elementary-aged students.",
+      "Organized and maintained codebases using GitHub, ensuring version control and consistency across lessons.",
+      "Led a team of 3 instructors, coordinating tasks and supporting lesson delivery.",
+      "Communicated technical concepts clearly to non-technical learners, fostering problem-solving skills.",
     ],
   },
   {

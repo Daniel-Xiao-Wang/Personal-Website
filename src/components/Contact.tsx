@@ -23,7 +23,7 @@ export function Contact() {
           rel="noopener noreferrer"
         >
           <span>LinkedIn</span>
-          <strong>daniel-wang</strong>
+          <strong>daniel-wang-9a4bb4248</strong>
         </a>
         <a
           className="contact-row"
