@@ -1,3 +1,5 @@
+"use client";
+
 import { projects } from "@/data/content";
 
 export function Projects() {
@@ -10,16 +12,45 @@ export function Projects() {
         <h2>Selected projects</h2>
         <p>
           Builds across AI tooling, full-stack apps, and applied machine learning.
-          Demo and repo links can be plugged in later.
         </p>
       </div>
 
       <div className="project-grid">
         {projects.map((project) => (
           <article key={project.title} className="project-card reveal">
-            <div className="project-media" aria-hidden="true">
-              <div className="project-media-glow" />
-              <span>{project.subtitle}</span>
+            <div className={`project-media${project.video ? " has-video" : ""}`}>
+              {project.video ? (
+                <video
+                  className="project-video"
+                  src={project.video}
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  onMouseEnter={(event) => {
+                    void event.currentTarget.play();
+                  }}
+                  onMouseLeave={(event) => {
+                    event.currentTarget.pause();
+                    event.currentTarget.currentTime = 0;
+                  }}
+                  onFocus={(event) => {
+                    void event.currentTarget.play();
+                  }}
+                  onBlur={(event) => {
+                    event.currentTarget.pause();
+                    event.currentTarget.currentTime = 0;
+                  }}
+                />
+              ) : (
+                <>
+                  <div className="project-media-glow" aria-hidden="true" />
+                  <span>{project.subtitle}</span>
+                </>
+              )}
+              {project.video ? (
+                <span className="project-media-hint">Hover to play</span>
+              ) : null}
             </div>
 
             <div className="project-content">
@@ -36,7 +67,7 @@ export function Projects() {
               <div className="project-links">
                 {project.demo ? (
                   <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                    Live Demo
+                    Watch Demo
                   </a>
                 ) : (
                   <span className="link-placeholder">Demo soon</span>

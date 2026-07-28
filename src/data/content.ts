@@ -100,15 +100,15 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Poker Analytical Helper",
+    title: "PokerBud",
     subtitle: "AI Strategy Tool",
     period: "May 2025 – July 2025",
     description:
       "An AI-assisted poker strategy tool that uses Claude for hand strength and pot-odds guidance, OpenCV and Tesseract for OCR game-state extraction from screenshots, and a Tkinter GUI with hand-history tracking and dual input modes.",
     tech: ["Python", "Claude API", "OpenCV", "Tesseract", "Tkinter"],
-    // Add these later when ready:
-    github: null as string | null,
-    demo: null as string | null,
+    github: "https://github.com/Daniel-Xiao-Wang/PokerBud",
+    demo: "/demos/pokerbud.mp4",
+    video: "/demos/pokerbud.mp4" as string | null,
     image: null as string | null,
   },
   {
@@ -120,6 +120,7 @@ export const projects = [
     tech: ["JavaScript", "React", "Flask", "Geolocation"],
     github: null as string | null,
     demo: null as string | null,
+    video: null as string | null,
     image: null as string | null,
   },
   {
@@ -131,6 +132,7 @@ export const projects = [
     tech: ["Python", "TensorFlow", "Scikit-learn", "Location APIs"],
     github: null as string | null,
     demo: null as string | null,
+    video: null as string | null,
     image: null as string | null,
   },
 ];
