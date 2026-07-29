@@ -124,15 +124,15 @@ export const projects = [
     image: null as string | null,
   },
   {
-    title: "Hopeful Ribbon",
-    subtitle: "ML Health Risk Tool",
+    title: "SelfSense",
+    subtitle: "ML Diagnostic Program",
     period: "March 2023 – April 2023",
     description:
-      "A machine learning web app that assesses breast cancer risk from fine-needle aspiration cell data. Reduced 30 features to the 3 most significant, trained a KNN model to 91% accuracy, and connected at-risk users to nearby specialized facilities with email and geolocation alerts.",
+      "A machine learning diagnostic web app that assesses breast cancer risk from fine-needle aspiration cell data. Reduced 30 features to the 3 most significant, trained a KNN model to 91% accuracy, and connected at-risk users to nearby specialized facilities with email and geolocation alerts.",
     tech: ["Python", "TensorFlow", "Scikit-learn", "Location APIs"],
-    github: null as string | null,
-    demo: null as string | null,
-    video: null as string | null,
+    github: "https://github.com/Daniel-Xiao-Wang/SelfSense",
+    demo: "/demos/selfsense.mp4",
+    video: "/demos/selfsense.mp4" as string | null,
     image: null as string | null,
   },
 ];
